@@ -62,6 +62,7 @@ if (count($errors) == 0) {
     $result_insert = mysqli_query($connect, $insert_data);
 
     $_SESSION['username'] = $username;
+    $_SESSION['success'] = "success";
     header("location:index.php");
     exit();
 } else {
